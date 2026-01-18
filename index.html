@@ -148,11 +148,40 @@
                 min-width: auto;
             }
         }
+        
+        /* ===== ESTILOS PARA FOTO DE PERFIL ===== */
+        .profile-photo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Ajuste para móviles */
+        @media (max-width: 768px) {
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <!-- Foto de perfil -->
+            <div class="profile-photo-container">
+                <img src="Photo.jpg" alt="Foto de Crhistian Parrado" class="profile-photo">
+            </div>
+            
             <h1>Crhistian Parrado</h1>
             <h2>Senior Systems Administrator</h2>
         </header>
